@@ -4,6 +4,7 @@ import { getScore } from '../lib/ai';
 import { calculateAverageScore } from '../utils/calculateAverageScore';
 import { removeEmojis } from '../utils/removeEmojis';
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from "next/link";
 
 
@@ -138,7 +139,7 @@ export default function Home() {
           </form>
           {!dataLoaded && (
             <p className="mt-10 mb-6 text-center text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed max-w-2xl mx-auto text-gray-300">
-              Enhance your workouts with <span className="text-green-400 font-bold">EnerGYM</span>! Our webapp uses AI to analyze your Spotify playlists and determine how optimal each track is for training. Just enter your Spotify playlist URL to get a detailed breakdown of your music's energy levels and find the perfect beats to keep you moving.
+              Enhance your workouts with <span className="text-green-400 font-bold">EnerGYM</span>! Our webapp uses AI to analyze your Spotify playlists and determine how optimal each track is for training. Just enter your Spotify playlist URL to get a detailed breakdown of your music&apos;s energy levels and find the perfect beats to keep you moving.
             </p>
           )}
 
@@ -163,10 +164,12 @@ export default function Home() {
                 <ul className="space-y-4">
                   {tracks.map((track, index) => (
                     <li key={index} className="flex items-center space-x-4 bg-gray-800 p-4 rounded-lg shadow-md">
-                      <img
+                      <Image
                         src={track.albumImageUrl}
                         alt={track.albumName}
-                        className="w-24 h-24 max-w-[30%] object-cover rounded-lg"
+                        width={96} // Ancho en píxeles
+                        height={96} // Alto en píxeles
+                        className="object-cover rounded-lg"
                       />
                       <div className="flex-1 truncate text-sm max-w-[70%]">
                         <p className="truncate font-semibold">{track.title}</p>
