@@ -164,11 +164,11 @@ export default function Home() {
                 <ul className="space-y-4">
                   {tracks.map((track, index) => (
                     <li key={index} className="flex items-center space-x-4 bg-gray-800 p-4 rounded-lg shadow-md">
-                      <Image
+                      <img
                         src={track.albumImageUrl}
                         alt={track.albumName}
-                        width={96} // Ancho en píxeles
-                        height={96} // Alto en píxeles
+                        width={96}
+                        height={96}
                         className="object-cover rounded-lg"
                       />
                       <div className="flex-1 truncate text-sm max-w-[70%]">
