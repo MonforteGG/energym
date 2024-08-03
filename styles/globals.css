@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    color: #333; 
+    background: linear-gradient(180deg, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.8) 50%, rgba(17, 24, 39, 1) 100%);
+    background-attachment: fixed; 
+    background-size: cover; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+
+  
+
+  
