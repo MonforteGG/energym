@@ -1,5 +1,8 @@
 ### Project Description
 > :exclamation: **PROJECT COMPLETED FOR THE MIDUDEV HACKATHON IN COLLABORATION WITH VERCEL**
+> ### Deployed at: https://energym-drab.vercel.app/
+
+
 
 ![energym1](https://github.com/user-attachments/assets/fe7071fb-d210-449e-ab8d-b582b0bd49d6)
 
@@ -24,13 +27,6 @@
 
 > :warning: **Important Notice:** Using the free tier of Groq for song analysis and energy score generation has usage limits.
 
-### Code Repository
-
-https://github.com/MonforteGG/energym
-
-### Deployed Project
-
-https://energym-drab.vercel.app/
 
 ### Setup Instructions
 
