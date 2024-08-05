@@ -46,9 +46,9 @@
     ```
 4. **Set up environment variables**: Create a `.env.local` file in the root of the project and add your Spotify and OpenAI credentials.
     ```env
-    NEXT_PUBLIC_SPOTIFY_CLIENT_ID=your_spotify_client_id
-    NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-    NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key
+    SPOTIFY_CLIENT_ID=your_spotify_client_id
+    SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+    GROQ_API_KEY=your_groq_api_key
     ```
 5. **Start the development server**:
     ```bash
